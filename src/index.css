@@ -17,6 +17,10 @@ body {
   @apply content-[''] w-full left-0 top-0 rounded-xl rotate-12 h-full absolute bg-gray-600 -z-10;
 }
 
+/* .swiper-slide {
+  margin-right: 10px !important;
+} */
+
 .swiper-pagination-bullet {
   @apply bg-white !important;
 }

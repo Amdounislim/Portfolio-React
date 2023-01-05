@@ -5,7 +5,7 @@ import cv from "../../assets/cv_slim_amdouni.pdf"
 const About = () => {
   const info = [
     { text: "Years experience", count: "03" },
-    { text: "Completed Projects", count: "03" },
+    { text: "Completed Projects", count: "04" },
     { text: "Companies Work", count: "02" },
   ];
   return (

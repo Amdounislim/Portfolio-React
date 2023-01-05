@@ -1,13 +1,14 @@
+import project1 from "../../assets/images/project1.png"
 import project2 from "../../assets/images/project2.png"
 import project3 from "../../assets/images/project3.png"
 import project4 from "../../assets/images/project4.png"
 
 export const projects = [
     {
-      img: "project1",
-      name: "Connect MERN",
-      github_link: "https://github.com/Amdounislim/Connect-GoMyCode.git",
-      live_link: "",
+      img: project1,
+      name: "OGEC React/MapBox",
+      github_link: "https://github.com/Amdounislim/Enseignement-catholique.git",
+      live_link: "https://enseignement-catholique-rennes.com/",
     },
     {
       img: project2,
@@ -17,8 +18,8 @@ export const projects = [
     },
     {
       img: project3,
-      name: "Enseignement catholique Reactjs",
-      github_link: "https://github.com/Amdounislim/Enseignement-catholique.git",
+      name: "Connect MERN",
+      github_link: "https://github.com/Amdounislim/Connect-GoMyCode.git",
       live_link: "",
     },
     {

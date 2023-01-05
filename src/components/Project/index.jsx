@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -6,6 +6,7 @@ import { Pagination, Autoplay } from "swiper";
 import { projects } from "./projects";
 
 const Project = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
   
   return (
     <section id="projects" className="py-10 text-white">
@@ -34,9 +35,13 @@ const Project = () => {
               clickable: true,
             }}
             modules={[Pagination, Autoplay]}
+            onSlideChange={(e) => {
+              console.log(e.realIndex);
+              setActiveIndex(e.realIndex);
+            }}
           >
             {projects.map((project_info, i) => (
-              <SwiperSlide key={i}>
+              <SwiperSlide key={i} className={`${activeIndex !== i && "blur-sm"}`} >
                 <div className="h-fit w-full p-4 bg-slate-700 rounded-xl">
                   <img src={project_info.img} alt="" className="rounded-lg" />
                   <h3 className="text-xl my-4">{project_info.name}</h3>
