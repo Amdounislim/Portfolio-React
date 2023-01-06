@@ -3,10 +3,10 @@ import hero from "../../assets/images/hero2.png";
 import Typical from "react-typical";
 const Hero = () => {
   const social_media = [
-    "logo-github",
-    "logo-facebook",
-    "logo-linkedin",
-    "logo-twitter",
+    {logo:"logo-github",link:"https://github.com/Amdounislim"},
+    {logo:"logo-facebook",link:"#"},
+    {logo:"logo-linkedin",link:"https://www.linkedin.com/in/slim-amdouni-b90b0115a/"},
+    {logo:"logo-twitter",link:"#"}
   ];
   return (
     <section
@@ -49,7 +49,9 @@ const Hero = () => {
                 key={icon}
                 className="text-gray-600 hover:text-white cursor-pointer "
               >
-                <ion-icon name={icon}></ion-icon>
+                <a href={icon?.link} rel="noreferrer" target="_blank">
+                  <ion-icon name={icon.logo}></ion-icon>
+                </a>
               </div>
             ))}
           </div>

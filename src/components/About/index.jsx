@@ -1,6 +1,6 @@
 import React from "react";
 import aboutImg from "../../assets/images/personne.jpg";
-import cv from "../../assets/cv_slim_amdouni.pdf"
+import cv from "../../assets/cv_slim_amdouni.pdf";
 
 const About = () => {
   const info = [
@@ -19,10 +19,22 @@ const About = () => {
           <div className="p-2">
             <div className="text-gray-300 my-3">
               <p className="text-justify leading-7 w-11/12 mx-auto">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-                eos, quam vel quisquam, explicabo sit labore dignissimos optio
-                ratione quibusdam doloribus pariatur consequuntur sint.
-                Reprehenderit cupiditate possimus facere quasi voluptatem?
+                Full stack web developer with background of MERN stacks with
+                redux, along with a knock of building applications with utmost
+                efficiency. Strong professional with MSC willing to be an asset
+                for an organization.
+                <br />
+                <span className="hidden md:block" >
+                  Here are few highlights :
+                  <ul className="list-square ml-5">
+                    <li>Full stack web development</li>
+                    <li>Interactive front end as per the design</li>
+                    <li>react js and Node js </li>
+                    <li>Redux for state managment</li>
+                    <li>Building rest api</li>
+                    <li>Managing database</li>
+                  </ul>
+                </span>
               </p>
               <div className="flex mt-10 items-center gap-7">
                 {info.map((content) => (
