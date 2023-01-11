@@ -6,23 +6,22 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_djzvgkf",
-        "template_d7ma9fw",
-        form.current,
-        "h-jE78SLtaiq09nqP"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    e.target.reset();
+      emailjs
+        .sendForm(
+          "service_djzvgkf",
+          "template_d7ma9fw",
+          form.current,
+          "h-jE78SLtaiq09nqP"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+      e.target.reset();
   };
 
   return (
@@ -43,10 +42,20 @@ const Contact = () => {
             onSubmit={sendEmail}
           >
             <input type="text" placeholder="Your Name" name="user_name" />
-            <input type="Email" placeholder="Your Email Address" name="user_email" />
+            <input
+              type="Email"
+              placeholder="Your Email Address"
+              name="user_email"
+            />
             <input type="text" placeholder="Subject" name="subject" />
-            <textarea placeholder="Your Message" rows={10} name="message" ></textarea>
-            <button type="submit" className="btn-primary w-fit">Send Message</button>
+            <textarea
+              placeholder="Your Message"
+              rows={10}
+              name="message"
+            ></textarea>
+            <button type="submit" className="btn-primary w-fit">
+              Send Message
+            </button>
           </form>
         </div>
       </div>

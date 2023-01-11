@@ -24,7 +24,7 @@ const Hero = () => {
         <div className="md:text-left text-center">
           <h1 className="md:text-5xl text-2xl md:leading-normal leading-10 text-white font-bold">
             <span className="text-cyan-600 md:text-6xl text-5xl">
-              Hello!
+              Hello!!!!!!!!!!!!!!!!
               <br />
             </span>
             My Name is <span>Slim Amdouni</span>

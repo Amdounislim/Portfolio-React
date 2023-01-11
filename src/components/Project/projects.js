@@ -26,6 +26,6 @@ export const projects = [
       img: project4,
       name: "PokeDex Nextjs/TS",
       github_link:"https://github.com/Amdounislim/Test-Saqara-TS.git",
-      live_link: "",
+      live_link: "https://poke-dex-ts.netlify.app/",
     }
   ];
