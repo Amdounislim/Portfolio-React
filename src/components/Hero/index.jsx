@@ -3,10 +3,12 @@ import hero from "../../assets/images/hero2.png";
 import Typical from "react-typical";
 const Hero = () => {
   const social_media = [
-    {logo:"logo-github",link:"https://github.com/Amdounislim"},
-    {logo:"logo-facebook",link:"#"},
-    {logo:"logo-linkedin",link:"https://www.linkedin.com/in/slim-amdouni-b90b0115a/"},
-    {logo:"logo-twitter",link:"#"}
+    { logo: "logo-github", link: "https://github.com/Amdounislim" },
+    { logo: "logo-facebook", link: "#" },
+    {
+      logo: "logo-linkedin",
+      link: "https://www.linkedin.com/in/slim-amdouni-b90b0115a/",
+    },
   ];
   return (
     <section
@@ -42,7 +44,9 @@ const Hero = () => {
               ]}
             />
           </h4>
-          <button className="btn-primary mt-8">Contact Me</button>
+          <a href="#contact">
+            <button className="btn-primary mt-8">Contact Me</button>
+          </a>
           <div className="mt-8 text-3xl flex items-center md:justify-start justify-center gap-5">
             {social_media?.map((icon) => (
               <div
